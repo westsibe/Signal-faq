@@ -22,7 +22,7 @@ p, i, li { background: transparent; font-family: "Tahoma"; font-size: 12 pt; }
 <b>Как регистрироваться:</b></p>
 <ol start="0" class="red-numbers">
 <li> Если уже установлен российский мессенджер "Max", то не продолжайте шаги ниже на этом же устройстве – ничего хорошего из этого не выйдет сейчас или в дальнейшем: "Мах" <a href="https://github.com/KARENKING112/max-deep-analysis-of-the-messenger">видит и передаёт имена пакетов установленных приложений</a>. Это касается не только "Signal", но и VPN, и всего остального. Так что лучше не рисковать и не подставляться напрасно.</li><br>
-<li> Не торопитесь удалять "Telegram" или "WhatsApp", если что-то из этого установлено и работает: от "Сигнала" может прийти туда код активации… А если удаляете/удалено перечисленное, то нужно удалить и сам аккаунт там, а не просто их приложение.</li><br>
+<li> Не торопитесь удалять "WhatsApp" или "Telegram", если что-то из этого установлено и работает: от "Сигнала" может прийти туда код активации… А если удаляете/удалено перечисленное, то нужно удалить и сам аккаунт там, а не просто их приложение.</li><br>
 <li> Отключите на время в смартфоне фильтрацию звонков с незнакомых тел.номеров (если включена), т.к. в процессе, вместо запроса SMS-кода, может быть активна опция запроса верификационного звонка.</li><br>
 <li> Переключаемся на Wi-Fi (если там открываются не только российские сайты из "белого списка" Роскомнадзора), желательно не "Ростелекома" – это если сейчас находитесь на мобильном Интернете (и есть возможность переключиться на нормальный Wi-Fi).</li><br>
 <li> Скачиваем мессенджер &quot;Signal&quot; (в <a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms">Google Play Маркет</a> / на <a href="https://github.com/signalapp/Signal-Android">Github.com</a>) или <a href="https://github.com/tw-hx/Signal-Android/releases/">&quot;Signal-FOSS&quot;</a>, если ваш смартфон без сервисов "Google"
@@ -44,16 +44,14 @@ p, i, li { background: transparent; font-family: "Tahoma"; font-size: 12 pt; }
 <li> Если всё равно никак, то запросите верификационный звонок на ваш мобильный, стационарный телефон (там формат: +7_код_города_номер) или на номер SIP. А если данная опция неактивна, то необходимо сменить VPN и страну в п.10, но проще всего, просто сделать запрос SMS-кода на SIM-карту другого сотового оператора, повторив описанные выше шаги с п.6.</li><br>
 <li> Бывает, что для мобильного приложения "Signal" код вообще никак не приходит, но зато в "Molly" (что почти тоже самое) через VPN или Tor в <a href="https://invizible.net/ru/" title="https://invizible.net/ru/">&quot;InviZible Pro&quot;</a> приходит нормально. Но т.к. Tor, сам по себе, медленный, то затем чтобы успешно пользоваться звонками в "Molly" – необходимо активировать опцию "Обход цензуры", искать быстрый Socks5-прокси, либо продолжать использовать VPN.</li> <p>
 <font color="grey">Также, могут стать помехой получению кода, подключенные у сотового оператора опции, блокирующие приём нежелательных SMS: "МТС Защитник", "MegaFon Защита" и т.д… На некоторых тарифах они активированы изначально.</font></p>
-
 <li> Как SMS-код получен: выключаем VPN (если был использован для получения кода), можно сменить или выключить и Signal-прокси, если наблюдается проблема с отправкой медиа (путь в п.6 или клик по значку щита…), т.к. в Настройках&gt; Конфиденциальность&gt; Расширенные&gt; "Обход цензуры" обычно работает лучше.</li><br>
 <li> Затем делаем шаг назад и в Конфиденциальности&gt; Номер телефона: выбираем "Никто" и ниже: "Все"; а в Настройках&gt; Профиль(вверху)&gt; вставляем аватар/фото, заполняем имя пользователя вида @username|123 (цифры любые, будут через точку), имя_фамилия/ник и остальное.</li>
 </ol>
-<p>Если возникнет необходимость в других рабочих Signal-прокси (ссылки вида: <a href="https://reurl.cc/LQVrRa" title="https://signal.tube/#server02.molthagen.de">https://signal.tube/#domain.name</a> – формат для быстрой вставки прокси в приложение), то найти их можно в различных соцсетях по тегам: <a href="https://x.com/search?q=%23signalproxy&amp;typed=query">#SignalProxy</a>, <a href="https://mastodon.online/tags/IranASignalProxy">#IranASignalProxy</a> или <a title="с зарубежного е-майла" href="mailto:imtelsib%2Bs%40disroot.org?subject=Signal%20%2B%20%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%BE%D0%B5+%D1%87%D0%B8%D1%81%D0%BB%D0%BE&oq=%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%BE%D0%B5&body=%D0%9F%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C+%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B9%D1%82%D0%B5+%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81+%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE+%D1%81+%D0%B7%D0%B0%D1%80%D1%83%D0%B1%D0%B5%D0%B6%D0%BD%D0%BE%D0%B3%D0%BE+%D0%B5-%D0%BC%D0%B0%D0%B9%D0%BB%D0%B0.">запросите тут</a>.</p>
+<p>Если возникнет необходимость в других рабочих Signal-прокси (ссылки вида: <a href="https://reurl.cc/LQVrRa" title="https://signal.tube/#server02.molthagen.de">https://signal.tube/#domain.name</a> – формат для быстрой вставки прокси в приложение), то найти их можно в различных соцсетях по тегам: <a href="https://x.com/search?q=%23signalproxy&amp;typed=query">#SignalProxy</a>, <a href="https://mastodon.online/tags/IRanASignalProxy">#IRanASignalProxy</a> или <a title="с зарубежного е-майла" href="mailto:imtelsib%2Bs%40disroot.org?subject=Signal%20%2B%20%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%BE%D0%B5+%D1%87%D0%B8%D1%81%D0%BB%D0%BE&oq=%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%BE%D0%B5&body=%D0%9F%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C+%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D0%B9%D1%82%D0%B5+%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81+%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE+%D1%81+%D0%B7%D0%B0%D1%80%D1%83%D0%B1%D0%B5%D0%B6%D0%BD%D0%BE%D0%B3%D0%BE+%D0%B5-%D0%BC%D0%B0%D0%B9%D0%BB%D0%B0.">запросите тут</a>.</p>
 
 <p><b>Примеры групп:</b></p>
 	<p><img src="https://dl.dropbox.com/scl/fi/8l148ox7rbfd3scw6iowe/signal_group.jpg?rlkey=5xl1y00jwfzylqun47kanlew5&dl=0" alt="" style="max-width: 100%; height: auto;"><br><i><font color="grey">(Их описания видны, если кликнуть по аватару группы и затем по ссылке "далее…")</font></i>
 </p> 
-
 <p><b>Основные моменты по мессенджеру:</b>
 	<ul class="red-numbers">
 <li> Не включайте опцию "Блокировка регистрации" с подтверждением PIN-кода в "Учётной записи", т.к. потом могут случиться проблемы при перерегистрации!</li><br>
@@ -72,4 +70,10 @@ p, i, li { background: transparent; font-family: "Tahoma"; font-size: 12 pt; }
 </ul></p> 
 <img src="https://wotop.ru/count/small/1060" alt="" width="86">
 </body>
-</html>
+</html>s">
+<li> Ссылка на эту инструкцию в текстовом формате: <a href="https://dl.dropboxusercontent.com/scl/fi/pl7ykcta382oair21nmo2/signal-ru.txt?rlkey=kdzjrnwqalr9z0lrevkn45ml2&amp;dl=0">https://tiny.cc/signal-ru</a> </li>
+</ul></p> 
+<img src="https://wotop.ru/count/small/1060" alt="" width="86">
+</body>
+	</html>
+																																																									  
