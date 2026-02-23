@@ -27,18 +27,21 @@ p, i, li { background: transparent; font-family: "Tahoma"; font-size: 11 pt; }
 <li> Скачиваем (и запускаем) мессенджер &quot;Signаl&quot; (с <a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms">Google Play Маркет</a> / с <a href="https://github.com/signalapp/Signal-Android">Github.com</a>) или <a href="https://github.com/tw-hx/Signal-Android/releases/">&quot;Signаl-FOSS&quot;</a>, если ваш смартфон без сервисов "Google".
 <font color="grey">(Или, на крайний случай, Android-клиент <a href="https://molly.im" title="с их сайта">&quot;Molly&quot;</a> – там также поддерживается русский язык, но вместо Signаl-прoкси – <a href="https://cdn.jsdelivr.net/gh/proxifly/free-proxy-list@main/proxies/protocols/socks5/data.txt">Socks5-прoкси</a> и <a href="https://bridges.torproject.org/bridges?transport=obfs4" title="Запустите VPN…">Tоr</a> через приложение <a href="https://github.com/guardianproject/orbot-android/releases/" title="на github.com">&quot;Orbot&quot;</a>.)</font></li><br>
 <li> Если у вас Android-смартфон, то скачиваем на него "Proton VPN", "Adguard VPN", <a href="https://github.com/hiddify/hiddify-app/releases" title="c github.com">&quot;Hiddify Next&quot;</a> ver. 0.10.0 желательно: <a href="https://github.com/hiddify/hiddify-app/releases/download/v0.10.0/hiddify-android-universal.apk">hiddify-android-universal.apk</a> или другой, <font color="green">позволяющий обходить цензуру, но не скрывающий ваш реальный IP-адрес.</font><br> Запускаем. Если запущен "Hiddify Next", тогда прописываем в нём (в "подписках") ссылку на ключи VLESS, VMess, Hysteria2, Shadowsocks или Trojan, вроде этой:<br>
-<textarea readonly="readonly" rows="5" cols="32">https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/refs/heads/main/splitted-by-protocol/trojan.txt  …/shadowsocks.txt</textarea><br>
+<textarea readonly="readonly" rows="3" cols="36">https://raw.githubusercontent.com/F0rc3Run/F0rc3Run/refs/heads/main/splitted-by-protocol/trojan.txt  …/shadowsocks.txt</textarea><br>
 или<br>
-<textarea readonly="readonly" rows="3" cols="32">https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_BASE64.txt</textarea><br>
+<textarea readonly="readonly" rows="3" cols="36">https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY_BASE64.txt</textarea><br>
 (Рекомендуется отдавать предпочтение серверам в Японии, России, Нидерландах, странам в Западной Европе, США.) 
 <font color="green">Но лучше, если там будет подписка с ключами VPN для обхода "белых списков" РКН, например:</font><br>
-<textarea readonly="readonly" rows="4" cols="32">https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/1.txt  …/26.txt</textarea></li><br>
+<textarea readonly="readonly" rows="4" cols="36">https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/refs/heads/main/githubmirror/1.txt  …/26.txt</textarea><br>
+<font color="green">Или скачав <a href="https://github.com/romanvht/ByeByeDPI" title="с github.com">&quot;ByeByeDPI&quot;</a> на Android и опробовав стратегию, вроде этой:</font><br>
+<textarea readonly="readonly" rows="6" cols="36">-H:"signalcaptchas.org hcaptcha.com" -An -f-200 -Qr -s3:5+sm -a1 -As -d1 -s4+sm -s8+sh -f-300 -d6+sh -a1 -At,r,s -o2 -f-30 -As -r5 -Mh -r6+sh -f-250 -s2:7+s -s3:6+sm -a1 -At,r,s -s3:5+sm -s6+s -s7:9+s -q30+sm -a1</textarea><br>
+где кусок: <font color="blue">H:"signalcaptchas.org hcaptcha.com" -An</font> отвечает зато, чтобы "не засорять" непосредственно саму капчу. Соответственно, после этого выделенного куска, вторая часть стратегии может быть любой – на ваше усмотрение.</li><br>
 <li> Если у вас iPhone, то ищем в "AppStore" что-то похожее из VPN, не скрывающий или плохо скрывающий ваш реальный IP-адрес или страну.</li><br>
 <li>Если скачан и запущен "Signаl" для Android (не "Molly"), то через три точки справа вверху идём в Настройки&gt;  Данные и хранилище&gt; Прокси…<br>
 • Если "Signаl" для iPhone, то Настройки&gt; Конфиденциальность&gt; Расширенные&gt; Прокси&gt; и вписываем туда специальный Signаl-прокси для регистраций:<br>
-<input readonly="readonly" size="21" value="s2.oister.click"></input><br>
+<input readonly="readonly" size="22" value="s2.oister.click"></input><br>
 или пробуем брать свежий отсюда:
-<input readonly="readonly" size="21" value="https://x.com/signalproxyapp"></input><br>
+<input readonly="readonly" size="22" value="https://x.com/signalproxyapp"></input><br>
 (Должно написать <font color="green">&quot;Успех&quot;</font>.) Если Signаl-прокси неуспешен, то выключите и включите его слайдер в настройках (с паузой в 2 секунды), попробуйте сменить поставщика Интернета или перезагрузить смартфон, чтобы заработал.<br>
 <font color="red">Если не получилось запустить его или у вас "Molly", то пропускаем этот пункт…</font></li><br>
 
